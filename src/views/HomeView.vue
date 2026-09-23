@@ -1,7 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import ProductCard from '../components/ProductCard.vue';
 import api from '../api';
+import ProductCard from '../components/ProductCard.vue';
+import HeroCarousel from '../components/HeroCarousel.vue';
 
 const featured = ref([]);
 const categories = [
@@ -23,11 +24,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="hero container">
-    <h1>挑一件配得上你桌面的小東西</h1>
-    <p class="lead">耳機、鍵盤、滑鼠與螢幕，精選 3C 週邊，價格清楚標示，不囉嗦。</p>
-    <RouterLink to="/products" class="cta">瀏覽所有商品</RouterLink>
-  </section>
+  <HeroCarousel />
 
   <hr class="hairline container" />
 

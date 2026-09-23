@@ -10,6 +10,10 @@
   --tag: #F2A93B;
   --muted: #6B7280;
   --danger: #D64545;
+  --shadow-sm: 0 1px 2px rgba(18, 21, 26, 0.05);
+  --shadow-md: 0 12px 32px rgba(18, 21, 26, 0.1);
+  --radius: 8px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {

@@ -23,14 +23,16 @@ defineProps({
 .card {
   display: block;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   overflow: hidden;
   background: var(--surface);
-  transition: border-color 0.15s ease;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 
 .card:hover {
   border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
 }
 
 .thumb {
