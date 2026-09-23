@@ -28,25 +28,25 @@ const slides = [
 const current = ref(0);
 let timer = null;
 
-function goTo(index) {
+const goTo = (index) => {
   current.value = index;
-}
+};
 
-function next() {
+const next = () => {
   current.value = (current.value + 1) % slides.length;
-}
+};
 
-function prev() {
+const prev = () => {
   current.value = (current.value - 1 + slides.length) % slides.length;
-}
+};
 
-function startAutoplay() {
+const startAutoplay = () => {
   timer = setInterval(next, 5000);
-}
+};
 
-function stopAutoplay() {
+const stopAutoplay = () => {
   clearInterval(timer);
-}
+};
 
 onMounted(startAutoplay);
 onUnmounted(stopAutoplay);
