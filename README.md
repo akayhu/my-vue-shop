@@ -28,6 +28,7 @@
 
 ## 專案結構
 
+```
 src/
 ├── api.js # 集中管理後端 API 網址
 ├── main.js
@@ -50,7 +51,7 @@ src/
 ├── CartView.vue
 ├── LoginView.vue
 └── SellerView.vue # 受保護頁面示範
-
+```
 
 ## 開始使用
 
