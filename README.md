@@ -56,7 +56,7 @@ src/
 
 ### 前置需求
 
-需要先啟動後端 API（獨立專案，見 [my-first-node-app](../my-first-node-app)），確認跑在 `http://localhost:3000`。
+需要先啟動後端 API（獨立專案，見 [my-first-node-app](https://github.com/akayhu/my-first-node-app)），確認跑在 `http://localhost:3000`。
 
 ### 安裝與啟動
 
